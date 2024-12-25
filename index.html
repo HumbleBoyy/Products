@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rest Api</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+          theme: {
+            extend: {
+              colors: {
+                clifford: '#da373d',
+              }
+            }
+          }
+        }
+      </script>
+</head>
+<body>
+    
+    <header class="w-full h-[80px] bg-blue-300 p-5 flex justify-between items-center">
+        <a href="#" class="text-[2rem] font-bold">Products</a>
+        <ul class="category flex items-center justify-between gap-3"></ul>
+    </header>
+
+    <main>
+        <section class="flex justify-between p-5">
+             <div class="w-[70%]">
+              <div class="p-5">
+                <input class="search border w-[400px] text-[20px] p-5 h-[40px] shadow-md outline-none" type="text" placeholder="Search.....">
+             </div>
+               <ul class="products flex items-center justify-between flex-wrap m-5 gap-10"></ul>
+             </div>
+             <div class="getSingleData w-[30%] h-[80vh] border p-5">
+
+             </div>
+        </section>
+    </main>
+
+    <script src="./api.js"></script>
+</body>
+</html>
